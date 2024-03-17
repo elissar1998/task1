@@ -1,0 +1,73 @@
+.MainNav {
+  height: 100px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.MainNav .Left-Nav .Logo a {
+  flex: 1;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+.MainNav .Right-Nav {
+  flex: 0 0 70%;
+}
+.MainNav .Right-Nav .Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 30px;
+}
+.MainNav .Menu .Menu-elements a {
+  color: black;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.MainNav .Menu .Menu-elements a:hover,
+.MainNav .Menu .Menu-elements .IconLink a:hover {
+  color: #ee392c;
+}
+.MainNav .Toggle {
+  font-size: 30px;
+  display: none;
+}
+.MainNav .Menu .Menu-elements .IconLink .CalenderIcon + a {
+  color: white;
+}
+
+.MainNav .Menu .Menu-elements .IconLink {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 360px;
+  background: black;
+  color: white;
+}
+.MainNav .Menu .Menu-elements .IconLink .CalendarIcon {
+  /* font-size: 5px; */
+  /* box-sizing: content-box; */
+  size: 50px;
+  background-color: #ef4b3f;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .MainNav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .Menu {
+    margin: 15px;
+    display: none;
+  }
+}

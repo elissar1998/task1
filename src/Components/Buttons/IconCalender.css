@@ -1,0 +1,18 @@
+.Calender{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(241, 102, 10);
+    position: relative;
+    
+}
+.Calender .IconInsideCircle{
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  color: white;
+
+}
