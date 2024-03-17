@@ -20,7 +20,6 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
       <FeaturedSection />
-      <Hero />
     </>
   );
 }

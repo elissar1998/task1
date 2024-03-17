@@ -1,16 +1,17 @@
 .FeaturedContainer {
+  width: 100%;
   display: grid;
   grid-gap: 32px;
   grid-template-columns: 30% 42% 26%;
   grid-auto-rows: 1fr;
   align-items: center;
-  border: 1px solid green;
-  padding: 60px 410px;
+  /* border: 1px solid green; */
+  padding: 10px 165px;
   height: 740px;
   margin: 0 auto;
 }
 .FeaturedContainer > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 500px;
 }
 .FeaturedContainer .container_img img {
@@ -33,16 +34,44 @@
   padding: 10px;
   border-radius: 2%;
 }
-/* @media only screen and (300px <= width <= 800px) {
+.FeaturedContainer .container3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+}
+.FeaturedContainer .container3 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.FeaturedContainer .container3 .container .img-side {
+  max-width: 15%;
+  max-height: 5%;
+  float: left;
+}
+.FeaturedContainer .container3 .container .texts-side {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 12%;
+  float: left;
+}
+@media only screen and (300px <= width <= 600px) {
   .FeaturedContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 1620px;
-    justify-content: center;
+    height: 1640px;
+    justify-content: space-around;
     padding: 0px;
     width: 90%;
   }
   .FeaturedContainer > div {
-    width: 80%;
+    width: 90%;
   }
-} */
+  .FeaturedContainer .container_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .FeaturedContainer .container3 .container {
+    font-size: 10px;
+  }
+}

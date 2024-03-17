@@ -1,5 +1,9 @@
 import "./FeaturedSection.css";
 import featuredImg from "../../images/images/featured.jpg";
+import img1 from "../../images/images/info-icon-01.png";
+import img2 from "../../images/images/info-icon-02.png";
+import img3 from "../../images/images/info-icon-03.png";
+import img4 from "../../images/images/info-icon-04.png";
 const FeaturedSection = () => {
   //   handleClick = (handle) => {
   //     const element = document.getElementById(handle);
@@ -35,7 +39,47 @@ const FeaturedSection = () => {
           </li> */}
         </ul>
       </div>
-      <div></div>
+      <div className="container3">
+        <div className="container">
+          <div className="img-side">
+            <img src={img1} alt="" />
+          </div>
+          <div className="texts-side">
+            <h4>250 m2</h4>
+            <p>Total Flat Space</p>
+          </div>
+        </div>
+        <hr />
+        <div className="container">
+          <div className="img-side">
+            <img src={img2} alt="" />
+          </div>
+          <div className="texts-side">
+            <h4>250 m2</h4>
+            <p>Total Flat Space</p>
+          </div>
+        </div>
+        <hr />
+        <div className="container">
+          <div className="img-side">
+            <img src={img3} alt="" />
+          </div>
+          <div className="texts-side">
+            <h4>250 m2</h4>
+            <p>Total Flat Space</p>
+          </div>
+        </div>
+        <hr />
+        <div className="container">
+          <div className="img-side">
+            <img src={img4} alt="" />
+          </div>
+          <div className="texts-side">
+            <h4>250 m2</h4>
+            <p>Total Flat Space</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
